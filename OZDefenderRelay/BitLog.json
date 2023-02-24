@@ -1,0 +1,150 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "sender_",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "addr_",
+            "type": "address"
+          }
+        ],
+        "name": "AddCommitEvent",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "commitId_",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "author_",
+            "type": "address"
+          }
+        ],
+        "name": "addCommit",
+        "outputs": [
+          {
+            "internalType": "bytes32",
+            "name": "",
+            "type": "bytes32"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "bytes32",
+            "name": "commitId_",
+            "type": "bytes32"
+          }
+        ],
+        "name": "getCommitId",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "commit_",
+            "type": "uint256"
+          }
+        ],
+        "name": "getCommitAuthor",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "commit_",
+            "type": "uint256"
+          }
+        ],
+        "name": "getCommitTime",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "addr_",
+            "type": "address"
+          }
+        ],
+        "name": "getNumCommits",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "addr_",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index_",
+            "type": "uint256"
+          }
+        ],
+        "name": "getAllCommits",
+        "outputs": [
+          {
+            "internalType": "bytes32[]",
+            "name": "",
+            "type": "bytes32[]"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function",
+        "constant": true
+      }
+  ]
